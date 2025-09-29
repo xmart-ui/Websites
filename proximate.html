@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  margin: 0px;
+  padding: 0;
+  font-family: Arial;
+}
+.navbar {
+  font-size: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  
+  margin-top: 0;
+  padding: 23px;
+  background-color: whitesmoke;
+}
+
+
+.nab {
+  font-weight: bold;
+  font-size: 37px;
+  width: 30px;
+  line-height: 23px;
+  
+}
+.nab span {
+  font-size: 20px;
+  letter-spacing: 12px;
+}  
+.list {
+  display: flex;
+  gap: 3rem;
+  font-size: 25px;
+  list-style: none;
+  justify-content: center;
+  margin-left: 24%;
+}
+.search {
+  margin-left: 100px;
+}
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contain {
+   position: relative;
+}
+    .a1 {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      display: none;
+    }
+    .a1 li {
+      list-style: none;
+      font-size: 20px;
+      padding: 10px 20px;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+    .a1 li:hover {
+      background-color: aliceblue;
+      cursor: pointer;
+    }
+    .contain:hover .a1 {
+      display: block;
+    }
+   .contain {
+    position: relative;
+   }
+    .a2 {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      display: none;
+    }
+
+    .a2 li {
+      list-style: none;
+      font-size: 20px;
+      padding: 10px 20px;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+
+     .a2 li:hover {
+       background-color: aliceblue;
+      cursor: pointer;
+    }
+
+    .contain:hover .a2 {
+      display: block;
+    }
+
+    .contain {
+      position: relative;
+    }
+
+.a3 {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      display: none;
+    }
+
+    .a3 li {
+      list-style: none;
+      font-size: 20px;
+      padding: 10px 20px;
+      line-height: 30px;
+      white-space: nowrap;
+    }
+
+    .a3 li:hover {
+      background-color: aliceblue;
+      cursor: pointer;
+    }
+
+    .contain:hover .a3 {
+      display: block;
+  }
+
+ .hero{
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 100px;
+  padding-top: 24px;
+  
+ }
+
+ .head {
+  font-size: 60px;
+  margin-top: 99px;
+ }
+
+ .b1 {
+  background-color: black;
+  color:aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+ }
+
+ .h1{
+  font-size: 60px;
+  padding-top: 40px;
+  text-align: center;
+ }
+
+ .container-2 {
+   padding: 190px;
+   font-size: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+ }
+
+ .p-1 {
+  width: 90%;
+  word-spacing: 4px;
+ }
+
+ .b-0 {
+  background-color: black;
+  color:aliceblue;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid black;
+  font-size: 15px;
+  cursor: pointer;
+ }
+ 
+hr {
+  width: 98%;
+  background-color: black;
+  text-indent: 2svb;
+}
+
+hr:hover {
+  background-color: black;
+  text-indent: 2svb;
+
+}
+
+.container-3 {
+  padding: 160px;
+  padding-top: 70px;
+  display: flex;
+  gap: 2rem;
+  line-height: auto;
+  font-size: 25px;
+}
+
+.section-left {
+  width: 50%;
+  background-color:  #f5a56a;
+  padding: 21px;
+  border-radius: 16px;
+  border-bottom-left-radius: 300px; 
+  
+}
+
+.but {
+  margin-bottom: 0%;
+  background-color: white;
+  width: 40%;
+  padding: 12px;
+  border-radius: 12px;
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+.section-right {
+  width: 50%;
+  background-color: #f5f5f5;
+  padding: 21px;
+  border-radius: 16px;
+}
+
+.butto {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.container-4 {
+  padding: 160px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 4rem;
+  line-height: auto;
+  font-size: 25px;
+}
+
+.b-5 {
+ background-color: black;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 19px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cls-4 {
+  width: 70%;
+  font-size: 28spx;
+  
+}
+
+.sec-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 70px;
+  padding: 60px 20px;
+  max-width: 500px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.num {
+  color: blue;
+  font-size: 25px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  padding-top: 0;
+}
+
+.container-5 {
+  padding: 120px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 2rem;
+  line-height: auto;
+
+}
+
+.ima {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+
+}
+
+.par {
+  font-size: 16px;
+  word-spacing: 1px;
+  text-align: center;
+  width: auto;
+}
+
+.imag {
+  width: 50%;
+  height: 30%;
+}
+
+
+
+.container-6 {
+   padding: 120px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 5rem;
+  line-height: auto;
+  background-color: #f6f6f6;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 16px;
+
+}
+
+.sec-3 {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 9px;
+  max-width: 500px;
+  margin: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+.testimonial-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.testimonial-card h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.role {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 0.95em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: orange;
+  font-size: 1.2em;
+}
+
+.quote {
+  font-size: 2.5em;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.dots {
+  margin-top: 30px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.container-7 {
+  padding: 140px;
+  padding-top: 70px;
+  gap: 2rem;
+  line-height: auto;
+  font-size: 25px;
+  margin-right: 103px;
+}
+
+.last {
+  width: 99%;
+}
+
+.last-sec {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 34%;
+  text-align: center;
+  margin: auto;
+  max-width: 1000p;
+  font-size: 22px;
+}
+
+.in {
+  padding:12px 20px;
+  margin-left: 56px;
+  font-size: 16px;
+  text-align: left;
+
+  
+}
+
+.on {
+  padding: 10px;
+  font-size: 24px;
+  background-color: #000;
+  color: #f5f5f5;
+  border-radius: 12px;
+  align-items: center;
+  margin-left: 45%;
+  padding-left: 80px;
+  padding-right: 80px;
+  cursor: pointer;
+  margin-bottom:78px ;
+
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 140px;
+  padding-top: 100px;
+  gap: 5rem;
+  background-color: antiquewhite;
+}
+
+.last-div {
+  line-height: 18px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.last-div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.as {
+  text-decoration: none;
+}
+
+.part {
+  font-size: 20px;
+
+}
+
+  </style>
+</head>
+<body>
+  <header class="headr">
+  <nav class="navbar">
+    <div class="nab">Proximate  <span> Solution </span> </div>
+    <ul class="list">
+      <li>Home</li>
+      <div class="contain">
+      <li><a href="#">What we do</a>
+        <ul class="a1" >
+          <li><a >Gen Ai</a></li>
+          <li>E-Commerce</li>
+          <li>App Development</li>
+          <li>Web Development</li>
+          <li>Email Marketing</li>
+        </ul>
+      </li>
+      </div>
+      <div class="contain">
+      <li><a href="#">Who we are</a>
+        <ul class="a2">
+          <li>About us</li>
+          <li>Our team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+          <li>Contact as</li>
+        </ul>
+      </li>
+      </div>
+      <div class="contain">
+      <li><a href="#">Industries</a>
+        <ul class="a3">
+          <li>Real Estate</li>
+          <li>Loan&Mortgage</li>
+        </ul>
+      </li>
+      </div>
+      <li>Protofile</li>
+      <li class="search">🔍</li>
+    </ul>
+  </nav>
+  </header>
+  
+  <div class="hero">
+    <h1 class="head">
+      Smart design to scalable code,<br>
+      AI automation to digital marketing.<br>
+      We do it all.
+    </h1>
+    <button class="b1">Talk to Our Experts</button>
+    
+  </div>
+  
+  <h1 class="h1">Our Services</h1>
+  <div class="container-2" >
+    <div class="para">
+      <h1 >Website Design</h1>
+      <p class="p-1">Looking for a design that does more than look good? We design user-first interfaces that drive clicks, reduce bounce, and boost conversion. Whether it's a landing page or a full-blown app, our design strategy is built on behavior, backed by data, and made for scale. With AI-powered design tools.</p>
+      <button class="b-0">Start My  Design Project</button>
+    </div>
+    <br>
+    <hr>
+    <div  class="para">
+      <h1>E-Commerce</h1>
+      <p class="p-1">From first click to final checkout, we build eCommerce Stores that convert. We build fast, mobile-first stores on Shopify, WooCommerce, and fully custom stacks, complete with smart design, built-in SEO, and AI features that boost personalization and sales. Need eCommerce that’s easy to manage.</p>
+      <button class="b-0">Set Up MY Store</button>
+    </div>
+    <br>
+    <hr>
+    <div  class="para">
+      <h1>Gen AI</h1>
+      <p class="p-1">Generative AI isn’t just hype, it’s your new team member. From process automation to AI chatbots, content generation to customer insights, Proximate Solutions builds scalable, AI systems that drive real results. Smarter workflows. Faster decisions. Personalized user experiences. Let’s future-proof </p>
+      <button class="b-0">Automate My Business</button>
+    </div>
+    <br>
+    <hr>
+    <div  class="para">
+      <h1>Digital Marketing</h1>
+      <p class="p-1">We don’t do guesswork. We do data. Proximate Solutions builds digital marketing strategies that drive real growth, powered by SEO, PPC, content marketing, email flows, and social media that actually sells. Whether you’re growing a niche brand or scaling an enterprise, we turn visibility into traffic, and traffic.</p>
+      <button class="b-0">Start My Growth Engine</button>
+    </div>
+    <br>
+    <hr>
+    <div  class="para">
+      <h1>AI Integrated</h1>
+      <p class="p-1">Not all businesses work with off-the-shelf solutions. That’s why we offer AI-integrated CMS solutions, from tailored WordPress builds to fully custom platforms designed around your workflows. Need smarter content scheduling, personalization, or SEO optimization? Our CMS setups don’t just manage </p>
+      <button class="b-0">Start Smart Management</button>
+    </div>
+    <br>
+    </div>
+    <div class="container-3">
+     <div class="section-left">
+       <h1>What Can AI Automate for Your Business?</h1>
+       <h2>Tired of manual processes eating up your team’s time?</h2>
+       <p>We help businesses automate operations, workflows, and decision-making with custom AI-powered systems.</p>
+       <p class="but" >Let AI Work For Your Business→</p>
+     </div>
+
+     <div class="section-right">
+      <h1>24/7 Customer Support with AI Chatbot</h1>
+      <h2>Tired of answering the same questions over and over?</h2>
+      <p>AI-powered chatbots do more than respond—they retain customer connections, reduce support time, and sound like your brand. Trained on your FAQs, tone, and workflows, they handle customer support for you!</p>
+     <a class="butto" href="#">Create My Chatbot Assistant →</a>
+     </div>
+    </div>
+    <div class="container-4">
+      <div class="cls-4">
+        <h4>Building Brands Since Before AI Was Cool</h4>
+        <p>Since 2004, Proximate Solutions has been turning big ideas into digital success stories. What began as a small software shop is now a full-scale, globally trusted agency—delivering web development, design, digital marketing, and AI-driven automation to brands around the world. Led by a visionary CEO and powered by a team that mixes brainpower with boldness, we don’t just keep up—we set the pace. From CBD to couture, finance to fashion—we’ve built digital ecosystems that work. Let’s build something brilliant together.
+        </p>
+        <button class="b-5">Work With Us</button>
+      </div>
+      <section class="sec-2">
+        <div>
+           <h2 class="num">2000+</h2>
+           <p>Successful Projects</p>
+        </div>
+        <div>
+           <h2 class="num">100+</h2>
+           <p>Active Client</p>
+        </div>
+        <div>
+           <h2  class="num">97%</h2>
+           <p>Happpy Coustumers</p>
+        </div>
+        <div>
+           <h2  class="num">20+</h2>
+           <p>Years of Expertise</p>
+        </div>
+      </section>
+    </div>
+    <h1 class="heading">What’s New in Tech & Marketing</h1>
+    <div class="container-5">
+      <div class="equal">
+        <img class="ima" src="ima1.jpg">
+        <p class="par">Top AI-Powered SEO Tools for Real Estate Agents and Brokers</p>
+      </div>
+      <div class="equal">
+        <img class="ima" src="ima2.jpg">
+        <p class="par">What Are AI Marketing Automation Agencies and How Can They Help Your Business?</p>
+      </div>
+      <div class="equal">
+        <img class="ima" src="ima3.jpg">
+        <p class="par">How Web & Mobile App Development Fuels Digital Transformation for SMEs</p>
+      </div>
+    </div>
+    <h1 class="heading">Our Protofile</h1>
+
+
+    <div class="container-6">
+       <img class="imag" src="AQlightning-new.jpg">
+       
+       <section class="sec-3">
+        
+        <div>
+          <h4>Industry:</h4>
+          <p>Home and Outdoor Lighting Retails</p>
+        </div>
+        <div>
+          <h4>Platform:</h4>
+          <p>Big Commerce</p>
+        </div>
+        <div>
+          <h4>Location:</h4>
+          <p>California, USA</p>
+        </div>
+        <div>
+          <h4>Impressions:</h4>
+          <p>16.4M</p>
+        </div>
+        <div>
+          <h4>Google and ROI</h4>
+          <p>3X</p>
+        </div>
+        <div>
+          <h4>First-Page Ranking</h4>
+          <p>300%</p>
+        </div>
+       </section>
+    </div>
+    <h1 class="heading">What our client say</h1>
+    
+  <section class="testimonial-section">
+    <div class="testimonial-slider">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <h3>Mike.</h3>
+        <p class="role">AGM Electrical Supplies Australia</p>
+        <p class="message">Their team has given my company a new life and sky-rocketed the growth mind blowing ideas! Their research and creativity is beyond awesome</p>
+        <div class="stars">★★★★★</div>
+        <div class="quote">❞</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <h3>Captain Dunes.</h3>
+        <p class="role">Dubai</p>
+        <p class="message">The professional values and creativity of Proximate Solutions is inspiring! They will surely go a long way! We couldn’t have possibly had anyone...</p>
+        <div class="stars">★★★★★</div>
+        <div class="quote">❞</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <h3>Hussein Panjwani.</h3>
+        <p class="role">CEO Dream Home Mortgage, Texas USA</p>
+        <p class="message">The Mortgage Industry is quite tricky but I am surprised how they have worked efficiently to bring us leads constantly! Nothing but best wishes...</p>
+        <div class="stars">★★★★★</div>
+        <div class="quote">❞</div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+ <div class="container-7">
+  <div class="last">
+  <h1>Want to discuss a project?<br>
+   Connect With Us!</h1>
+   <p>We're not here to blend in—we're here to build brands that stand out. Ready to make yours one of them? Let’s build something worth leading with.</p>
+   </div>
+   <section class="last-sec">
+    <div>
+      <h2>Name*</h2>
+      <input class="in" >
+    </div>
+    <div>
+      <h2>Phone</h2>
+      <input  class="in" >
+    </div>
+    <div>
+      <h2>Email</h2>
+      <input  class="in">
+    </div>
+    <div>
+      <h2 style="margin-left: 45px;">Website if </h2>
+      <input class="in">
+    </div>
+   
+   </section>
+    
+ </div>
+ <button class="on" >Submit</button>
+ <footer class="footer">
+  <div class="last-div">
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Protofile</p>
+      <p>Cotact as</p>
+  </div>
+  <div class="last-div">
+      <p>Careers</p>
+      <p>Our ideas and insights</p>
+      <p>Privacy Policy</p>
+      <p>Terms and Conditions</p>
+  </div>
+  <div class="last-div">
+      <p>Real Estate</p>
+      <p>Loan and Mortgage</p>
+  </div>
+  <div class="last-div">
+      <p >Shopify</p>
+      <p >Gen Ai</p>
+  </div>
+  <div class="last-div">
+     <p class="part" ><a href="#">info@proximatesolutions.com</a></p>
+     <p class="part"><a href="#">1401, 21st ST #11112 <br>Sacramento, CA, 95811</a></p>
+  </div>
+  <p class="last-div" text-aligns="center">Proximate Solutions 2004 - 2025. All rights reserved.</p>
+ </footer>
+ <p></p>
+ 
+</body>
+</html>
